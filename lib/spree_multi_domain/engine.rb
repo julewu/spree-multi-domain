@@ -10,8 +10,6 @@ module SpreeMultiDomain
           Rails.application.config.cache_classes ? require(c) : load(c)
         end
       end
-
-      ApplicationController.send :include, SpreeMultiDomain::MultiDomainHelpers
     end
 
     config.to_prepare &method(:activate).to_proc
