@@ -1,0 +1,24 @@
+zh-CN:
+  spree:
+    back_to_store_list: 返回商城列表
+    default_currency: 默认货币
+    send_mail_as: Send Mail As
+    logo: Logo
+    payment_method: Payment Method
+    shipping_method: Shipping Method
+    store: 商城
+    stores: 商城
+    new_store: 新建商城
+    domains: 域名
+    stores_admin: "商城 & 域名"
+    manage_stores: 配置多个商城及关联的域名
+    editing_store: 编辑商城
+    default: 默认
+    store_name: 名称
+    store_code: 代码
+    promotion_rule_types:
+      store:
+        name: 商城
+        description: 在列表中选择商城
+    store_rule:
+      choose_stores: 选择商城
