@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
   version = '~> 3.0.5'
   s.add_dependency 'spree_core', version
   s.add_dependency 'spree_backend', version
-  s.add_dependency 'spree_frontend', version
   s.add_dependency 'spree_api', version
 
   s.add_development_dependency 'capybara', '~> 1.1.4'
