@@ -1,10 +1,9 @@
 $.fn.storeAutocomplete = function() {
   this.select2({
-    minimumInputLength: 1,
     multiple: true,
     initSelection: function(element, callback) {
       $.get(Spree.routes.store_search, { ids: element.val() }, function(data) {
-        callback(data)
+        callback(data.stores)
       })
     },
     ajax: {
@@ -14,7 +13,7 @@ $.fn.storeAutocomplete = function() {
         return { q: term }
       },
       results: function(data, page) {
-        return { results: data }
+        return { results: data.stores }
       }
     },
     formatResult: function(store) {
