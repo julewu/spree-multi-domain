@@ -6,8 +6,6 @@ Spree::Admin::ProductsController.class_eval do
   def set_stores
     if params[:product].key? :store_ids
       params[:product][:store_ids] = params[:product][:store_ids].split(',').map(&:to_i)
-    else
-      @product.store_ids = nil
     end
   end
 end
